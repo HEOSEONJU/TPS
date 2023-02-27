@@ -137,6 +137,8 @@ public class Player_Manager : MonoBehaviour
         Hold = 0.0f;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+
+        Shoot_Manager.Init_GUN();
     }
     private void Start()
     {
@@ -243,6 +245,17 @@ public class Player_Manager : MonoBehaviour
             Rd.velocity = Vector3.zero;
             Rd.angularVelocity = Vector3.zero;
             #endregion
+
+
+
+
+
+
+
+
+            Shoot_Manager.Swaping = CharAni.GetCurrentAnimatorStateInfo(1).IsTag("Swap");
+            Shoot_Manager.Reloading= CharAni.GetCurrentAnimatorStateInfo(1).IsTag("Reload");
+
         }
 
 

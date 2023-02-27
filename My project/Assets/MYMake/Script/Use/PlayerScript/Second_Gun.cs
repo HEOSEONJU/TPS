@@ -4,6 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.VFX;
 using System;
+using System.Linq;
+using UnityEngine.UIElements;
+
 public class Second_Gun : Base_Gun
 {
     
@@ -11,11 +14,14 @@ public class Second_Gun : Base_Gun
     public ParticleSystem SE1;
     public AudioSource SecondGunSound;
 
-    private void Start()
-        {
-            L2E.gameObject.SetActive(false);
-            Main = GetComponentInParent<Gun_Manager>();
-        }
+
+    public override void Init(Gun_Manager main, Animator _ani)
+    {
+        Main = main;
+        _animator = _ani;
+        L2E.gameObject.SetActive(false);
+    }
+    
 
     // Start is called before the first frame update
     public override void Shoot()
@@ -25,7 +31,7 @@ public class Second_Gun : Base_Gun
         {
             if (((Input.GetMouseButton(0) && CurrentAmmo == 0) && CurrentPack >= 1))
             {
-                ReloadFunction();
+                Reload_Function();
             }
             else if (Input.GetMouseButton(0) && Delay <= 0 & CurrentAmmo >= 1)
             {   
@@ -70,52 +76,31 @@ public class Second_Gun : Base_Gun
             List<int> attackEnemy = new List<int>();
             for (int i = 0; i < hitInfos.Length; i++)
             {
-                if (hitInfos[i].collider.gameObject.layer == 8)
-
-                {
-                    Vector3 a = hitInfos[i].point - cam.transform.position;
-                    EffectCount = GunEffectCount(hitInfos[i].point, hitInfos[i].normal, VE, EffectCount);
-
-                    break;
-
-                }
-                else if (hitInfos[i].collider.gameObject.layer == 10 & hitInfos[i].collider.tag != "Head")
+                
+                switch(hitInfos[i].collider.gameObject.layer)
                 {
 
-                    EffectCount = GunEffectCount(hitInfos[i].point, hitInfos[i].normal, VE, EffectCount);
-                    StartCoroutine(Main.HitCross(1.0f));
-
-                    int k = 0;
-                    bool ck = true;
-                    Base_HP temp = hitInfos[i].transform.GetComponent<Base_HP>();
-                    if (temp != null)
-                    {
-
-                        k = temp.ID;
-
-                        for (int j = 0; j < attackEnemy.Count; j++)
+                    case 8:
+                        Vector3 a = hitInfos[i].point - cam.transform.position;
+                        EffectCount = GunEffectCount(hitInfos[i].point, hitInfos[i].normal, VE, EffectCount);
+                        L2E.gameObject.SetActive(true);
+                        return;
+                        
+                    case 10:
+                        EffectCount = GunEffectCount(hitInfos[i].point, hitInfos[i].normal, VE, EffectCount);
+                        StartCoroutine(Main.HitCross(1.0f));
+                        Base_HP temp = hitInfos[i].transform.GetComponent<Base_HP>();
+                        if (temp != null)
                         {
-                            if (attackEnemy[j] == k)
+                            if (!attackEnemy.Contains(temp.ID))
                             {
-                                ck = false;
-                            }
-                            if (ck == true)
-                            {
-                                attackEnemy.Add(k);
-                                if (temp.Live)
-                                {
-                                    temp.Damged(GunDamage, true);
-                                }
-
-
-
+                                attackEnemy.Add(temp.ID);
+                                temp.Damged(GunDamage, true);
                             }
                         }
-                    }
-
-
+                        break;
                 }
-                else if (hitInfos[i].transform.CompareTag("Bullet"))
+                if (hitInfos[i].transform.CompareTag("Bullet"))
                 {
                     StartCoroutine(Main.HitCross(0.3f));
 
@@ -156,20 +141,15 @@ public class Second_Gun : Base_Gun
     }
     public override void Reload_Function()
     {
-
-        StartCoroutine(ReloadFunction());
+        if (CurrentAmmo == CurrentReload)
+            return;
+        Main.PIN = false;
+        
+        _animator.CrossFade("reload_shoot_sr", 0.2f);
     }
-
-
-    IEnumerator ReloadFunction()
+    public override void Reload_After_Function()
     {
 
-        Main.PIN = false;
-        Main.Reloading = true;
-        Main.SRRealod = true;
-
-
-        yield return new WaitForSeconds(ReloadTime + 0.3f);
         if (Reload > CurrentPack)
         {
             CurrentAmmo = CurrentPack;
@@ -182,13 +162,9 @@ public class Second_Gun : Base_Gun
             CurrentPack -= CurrentReload;
             CurrentPack += temp;
         }
-
-        Main.SRRealod = false;
-
-
-
-        Main.Reloading = false;
     }
+    
+
 
 
 

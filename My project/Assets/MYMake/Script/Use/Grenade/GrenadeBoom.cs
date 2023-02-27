@@ -92,7 +92,7 @@ public class GrenadeBoom : MonoBehaviour
     {
         #region//기초세팅
         ThrowStart = false;
-        RaycastHit[] hit
+        RaycastHit[] hit;
         CountDown = Delay;
         Effect.SetActive(true);
         LayerMask mask = LayerMask.NameToLayer("Enemy");

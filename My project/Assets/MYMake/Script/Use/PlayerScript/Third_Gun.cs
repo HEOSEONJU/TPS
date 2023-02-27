@@ -6,6 +6,14 @@ public class Third_Gun : Base_Gun
 {
     [SerializeField]
     BoomGun BoomGunObject;
+
+    public override void Init(Gun_Manager main, Animator _ani)
+    {
+        Main = main;
+        _animator = _ani;
+        
+    }
+
     public override void Shoot()
     {
 
@@ -26,7 +34,12 @@ public class Third_Gun : Base_Gun
         
         return;
     }
+    
+    public override void Reload_After_Function()
+    {
 
+        return;
+    }
 
     // Update is called once per frame
 

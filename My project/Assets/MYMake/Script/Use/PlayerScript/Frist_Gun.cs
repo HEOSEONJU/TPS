@@ -5,11 +5,12 @@ using UnityEngine;
 public class Frist_Gun : Base_Gun
 {
 
-    private void Start()
+    public override void Init(Gun_Manager main, Animator _ani)
     {
-        Main = GetComponentInParent<Gun_Manager>();
-
+        Main=main;
+        _animator=_ani;
     }
+    
     #region //소리오브젝트/이펙트
     int Fcount;
     public AudioSource[] FLSound;
@@ -67,22 +68,14 @@ public class Frist_Gun : Base_Gun
     }
     public override void Reload_Function()
     {
-
-        StartCoroutine(ReloadFunction());
-    }
-
-
-
-    IEnumerator ReloadFunction()
-    {
-
+        if(CurrentAmmo==CurrentReload)
+            return;
         Main.PIN = false;
-        Main.Reloading = true;
-        Main.ARRealod = true;
 
-
-        yield return new WaitForSeconds(ReloadTime + 0.3f);
-
+        _animator.CrossFade("reload_shoot_ar", 0.2f);
+    }
+    public override void Reload_After_Function()
+    {
         if (Reload > CurrentPack)
         {
             CurrentAmmo = CurrentPack;
@@ -95,13 +88,10 @@ public class Frist_Gun : Base_Gun
             CurrentPack -= CurrentReload;
             CurrentPack += temp;
         }
-
-        Main.ARRealod = false;
-
-
-
-        Main.Reloading = false;
     }
+    
+
+
 
 
 

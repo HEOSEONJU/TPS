@@ -25,12 +25,12 @@ public class PlayerMoveSound : MonoBehaviour
 
     [Header("1번총")]
     public AudioSource[] ARReload;
-    public Collider FirstGun;
+    
     [Header("2번총")]
     public AudioSource SRCock;
     public AudioSource[] SRReload;
     public AudioSource SRFire;
-    public Collider SecondGun;
+    
 
 
 
@@ -70,30 +70,7 @@ public class PlayerMoveSound : MonoBehaviour
         _Manager.Shoot_Manager.PIN = false;
     }
 
-    public void WeaponOff()
-    {
-        if(_Manager.Shoot_Manager.Equip_Gun.GunID==1)
-        {
-            FirstGun.isTrigger = true;
-        }
-        else if(_Manager.Shoot_Manager.Equip_Gun.GunID == 2)
-        {
-            SecondGun.isTrigger = true;
-        }
-
-    }
-    public void WeaponOn()
-    {
-        if (_Manager.Shoot_Manager.Equip_Gun.GunID == 1)
-        {
-            FirstGun.isTrigger = false;
-        }
-        else if (_Manager.Shoot_Manager.Equip_Gun.GunID == 2)
-        {
-            SecondGun.isTrigger = false;
-        }
-
-    }
+    
 
 
 

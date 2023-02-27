@@ -24,9 +24,8 @@ public class Gun_Manager : MonoBehaviour
     public Camera cam;
     public Camera subcam;
     public Player_Manager Move;
-    public bool ARRealod;
-    public bool SRRealod;
-
+    
+    
     public bool ARshot;
     public bool SRshot;
     [SerializeField]
@@ -35,72 +34,91 @@ public class Gun_Manager : MonoBehaviour
     public GameObject Equip_Gun_Model;
     [SerializeField]
     bool BoomHave;
+
+    public int Swap_GN;
+
+    public void Init_GUN()
+    {
+        foreach (var gun in GunList) 
+        {
+            gun.Init(this, SpineAction);
+        }
+    }
+
     public void GunSWap()
     {
         if (Shooting == false && Reloading == false)
         {
 
-            int SwapGunNumber;
+            
             if (Input.GetKey(KeyCode.Alpha1))
             {
-                SwapGunNumber = 1;
-                if (Equip_Gun.GunID != SwapGunNumber)
+                Swap_GN = 1;
+                if (Equip_Gun.GunID != Swap_GN)
                 {
-                    
-                    StartCoroutine(GunSwapFunction(SwapGunNumber, Equip_Gun.GunID));//ÃÑ¹Ù²Ù±â
-                }
+                    GunSwapFunction(Swap_GN, Equip_Gun.GunID);
+}
             }
             else if (Input.GetKey(KeyCode.Alpha2))
             {
-                SwapGunNumber = 2;
-                if (Equip_Gun.GunID != SwapGunNumber)
+                Swap_GN = 2;
+                if (Equip_Gun.GunID != Swap_GN)
                 {
-                    StartCoroutine(GunSwapFunction(SwapGunNumber, Equip_Gun.GunID));//ÃÑ¹Ù²Ù±â
+                    GunSwapFunction(Swap_GN, Equip_Gun.GunID);
                 }
             }
             else if (Input.GetKey(KeyCode.Alpha3))
             {
-                SwapGunNumber = 3;
-                if (Equip_Gun.GunID != SwapGunNumber && BoomHave == true)
+                Swap_GN = 3;
+                if (Equip_Gun.GunID != Swap_GN && BoomHave == true)
                 {
-                    StartCoroutine(GunSwapFunction(SwapGunNumber, Equip_Gun.GunID));//ÃÑ¹Ù²Ù±â
+                    GunSwapFunction(Swap_GN, Equip_Gun.GunID);
                 }
             }
 
         }
 
     }
-    IEnumerator GunSwapFunction(int GunNumber, int CurrentGN)
+    public void GunSwapFunction(int GunNumber, int CurrentGN)
     {
-        Swaping = true;
+        
         PIN = false;
         if (Line.enabled == true)
         {
             Line.enabled = false;
         }
-        SpineAction.SetTrigger("ChangeTrigger");
-
-        yield return new WaitForSeconds(1.25f);
-
-        Equip_Gun_Model.SetActive(false);
-
-        Equip_Gun = GunList[GunNumber - 1];
-        Equip_Gun_Model = Equip_Gun.GunModel;
-        Equip_Gun_Model.SetActive(true);
+        
+        SpineAction.CrossFade("weaponChange_rest", 0.05f);
+        
+        
 
         
 
-        GameUI.GunSwapImage(CurrentGN, Equip_Gun.GunID);
-        if (Equip_Gun .GunID== 3)
+        
+    }
+    public void After_Swap()
+    {
+        int BefreGN = Equip_Gun.GunID;
+        Equip_Gun_Model.SetActive(false);
+
+        Equip_Gun = GunList[Swap_GN - 1];
+        Equip_Gun_Model = Equip_Gun.GunModel;
+        Equip_Gun_Model.SetActive(true);
+        
+
+
+        GameUI.GunSwapImage(BefreGN, Equip_Gun.GunID);
+        if (Equip_Gun.GunID == 3)
         {
             SpineAction.SetTrigger("HandGun");
         }
 
 
-        yield return new WaitForSeconds(0.05f);
+        
 
-        Swaping = false;
-        SpineAction.SetBool("Change", Swaping);
+        //Swaping = false;
+        //SpineAction.SetBool("Change", Swaping);
+
     }
 
 
@@ -154,8 +172,7 @@ public class Gun_Manager : MonoBehaviour
     public void AnimationsActive()
     {
 
-        SpineAction.SetBool("ARReload", ARRealod);
-        SpineAction.SetBool("SRReload", SRRealod);
+        
         SpineAction.SetBool("ARSHOT", ARshot);
         if (SRshot)
         {
@@ -172,7 +189,7 @@ public class Gun_Manager : MonoBehaviour
     List<Collider> GunCollider;
     public void Collideroff()
     {
-        if (Swaping || Move.Action == true)
+        if ((Swaping || Move.Action) == true)
         {
             for (int i = 0; i < GunCollider.Count; i++)
             {

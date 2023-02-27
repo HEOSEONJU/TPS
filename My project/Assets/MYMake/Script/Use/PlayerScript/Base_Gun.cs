@@ -42,10 +42,15 @@ public abstract class Base_Gun : MonoBehaviour
     protected int GunDamage = 200;
     #endregion
 
+    [SerializeField]
+    protected Animator _animator;
+    
 
+    public abstract void Init(Gun_Manager main,Animator _ani);
     public  abstract void Shoot();
     public abstract void Reload_Function();
-
+    public abstract void Reload_After_Function();
+    
 
 
 
