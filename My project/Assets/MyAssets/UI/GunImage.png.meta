@@ -1,0 +1,984 @@
+fileFormatVersion: 2
+guid: 12ea461534f99b94d8907cee9545ee3f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3268745967685886146
+    second: ndrfpsui_0
+  - first:
+      213: -3326239770121502555
+    second: ndrfpsui_1
+  - first:
+      213: 5396234504225920422
+    second: ndrfpsui_2
+  - first:
+      213: 1828247874339333793
+    second: ndrfpsui_3
+  - first:
+      213: 7439585961275513570
+    second: ndrfpsui_4
+  - first:
+      213: -4826396471082002684
+    second: ndrfpsui_5
+  - first:
+      213: 4861821903232115260
+    second: ndrfpsui_6
+  - first:
+      213: 1019450364121668321
+    second: ndrfpsui_7
+  - first:
+      213: 901529208893912737
+    second: ndrfpsui_8
+  - first:
+      213: 7359293182476327011
+    second: ndrfpsui_9
+  - first:
+      213: 2424276979661871059
+    second: ndrfpsui_10
+  - first:
+      213: 5003982763806465499
+    second: ndrfpsui_11
+  - first:
+      213: 834366959902792130
+    second: ndrfpsui_12
+  - first:
+      213: -8316910746488802310
+    second: ndrfpsui_13
+  - first:
+      213: 2048818529841660277
+    second: ndrfpsui_14
+  - first:
+      213: -6753829769485677588
+    second: ndrfpsui_15
+  - first:
+      213: -3289294210863453279
+    second: ndrfpsui_16
+  - first:
+      213: -365949680134827077
+    second: ndrfpsui_17
+  - first:
+      213: 8683457901561144931
+    second: ndrfpsui_18
+  - first:
+      213: -6415130033887561936
+    second: ndrfpsui_19
+  - first:
+      213: 4453912463407719326
+    second: ndrfpsui_20
+  - first:
+      213: -9069104025402404380
+    second: ndrfpsui_21
+  - first:
+      213: 7371227196131701589
+    second: ndrfpsui_22
+  - first:
+      213: -245461706244074339
+    second: ndrfpsui_23
+  - first:
+      213: 4436359774662875402
+    second: ndrfpsui_24
+  - first:
+      213: -2147372825602819105
+    second: ndrfpsui_25
+  - first:
+      213: 8677308548131013493
+    second: ndrfpsui_26
+  - first:
+      213: -5229901538173608788
+    second: ndrfpsui_27
+  - first:
+      213: 5197284127145205623
+    second: ndrfpsui_28
+  - first:
+      213: 4072232370491601532
+    second: ndrfpsui_29
+  - first:
+      213: -7791438591125539095
+    second: ndrfpsui_30
+  - first:
+      213: 4851178336977279516
+    second: ndrfpsui_31
+  - first:
+      213: -4791588543393608779
+    second: ndrfpsui_32
+  - first:
+      213: -8458828292630677621
+    second: ndrfpsui_33
+  - first:
+      213: -2835267018073237625
+    second: ndrfpsui_34
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 2
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 1357, y: 991, z: 126, w: 891}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ndrfpsui_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 1844
+        width: 275
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3f97176cd413a2d0800000000000000
+      internalID: -3268745967685886146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ndrfpsui_1
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 1910
+        width: 492
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a081206d82d6d1d0800000000000000
+      internalID: -3326239770121502555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ndrfpsui_2
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 1899
+        width: 402
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a5971de0b643ea40800000000000000
+      internalID: 5396234504225920422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ndrfpsui_3
+      rect:
+        serializedVersion: 2
+        x: 1933
+        y: 1975
+        width: 112
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a6eb5751cd3f5910800000000000000
+      internalID: 1828247874339333793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ndrfpsui_4
+      rect:
+        serializedVersion: 2
+        x: 1945
+        y: 1878
+        width: 99
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ea5fc1e308be3760800000000000000
+      internalID: 7439585961275513570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ndrfpsui_5
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1531
+        width: 280
+        height: 269
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40755fb1bf1350db0800000000000000
+      internalID: -4826396471082002684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ndrfpsui_6
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 1708
+        width: 557
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c322d5f0349a87340800000000000000
+      internalID: 4861821903232115260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ndrfpsui_7
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1706
+        width: 408
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ea5d9374b0d52e00800000000000000
+      internalID: 1019450364121668321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ndrfpsui_8
+      rect:
+        serializedVersion: 2
+        x: 1867
+        y: 1697
+        width: 181
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a6b2caf900e28c00800000000000000
+      internalID: 901529208893912737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ndrfpsui_9
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 1546
+        width: 463
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36894738826712660800000000000000
+      internalID: 7359293182476327011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ndrfpsui_10
+      rect:
+        serializedVersion: 2
+        x: 1409
+        y: 1503
+        width: 505
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d717e19113c4a120800000000000000
+      internalID: 2424276979661871059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ndrfpsui_11
+      rect:
+        serializedVersion: 2
+        x: 1970
+        y: 1454
+        width: 26
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdd9cdabfc7b17540800000000000000
+      internalID: 5003982763806465499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ndrfpsui_12
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 1324
+        width: 544
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c914515454449b00800000000000000
+      internalID: 834366959902792130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ndrfpsui_13
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 1278
+        width: 654
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af3f7eeadb5649c80800000000000000
+      internalID: -8316910746488802310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ndrfpsui_14
+      rect:
+        serializedVersion: 2
+        x: 1402
+        y: 1311
+        width: 482
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5714378099dde6c10800000000000000
+      internalID: 2048818529841660277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ndrfpsui_15
+      rect:
+        serializedVersion: 2
+        x: 1970
+        y: 1328
+        width: 28
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceb0954ab939542a0800000000000000
+      internalID: -6753829769485677588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ndrfpsui_16
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 1138
+        width: 497
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ab2cb7b7541a52d0800000000000000
+      internalID: -3289294210863453279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ndrfpsui_17
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 962
+        width: 580
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb355ed64b2ebeaf0800000000000000
+      internalID: -365949680134827077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ndrfpsui_18
+      rect:
+        serializedVersion: 2
+        x: 1393
+        y: 1171
+        width: 494
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3666c9c54f6d18870800000000000000
+      internalID: 8683457901561144931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ndrfpsui_19
+      rect:
+        serializedVersion: 2
+        x: 1964
+        y: 1175
+        width: 40
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03731361931e8f6a0800000000000000
+      internalID: -6415130033887561936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ndrfpsui_20
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 929
+        width: 582
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e932a12a9c97fcd30800000000000000
+      internalID: 4453912463407719326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ndrfpsui_21
+      rect:
+        serializedVersion: 2
+        x: 1398
+        y: 1003
+        width: 502
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e113d660f1142280800000000000000
+      internalID: -9069104025402404380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ndrfpsui_22
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 696
+        width: 507
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 553f028941cdb4660800000000000000
+      internalID: 7371227196131701589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ndrfpsui_23
+      rect:
+        serializedVersion: 2
+        x: 1394
+        y: 762
+        width: 427
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d945c51f0e1f79cf0800000000000000
+      internalID: -245461706244074339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ndrfpsui_24
+      rect:
+        serializedVersion: 2
+        x: 1828
+        y: 880
+        width: 145
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a09dc90d5bd119d30800000000000000
+      internalID: 4436359774662875402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ndrfpsui_25
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 518
+        width: 605
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdbfd99dacff232e0800000000000000
+      internalID: -2147372825602819105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ndrfpsui_26
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 395
+        width: 750
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5734fc1762efb6870800000000000000
+      internalID: 8677308548131013493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ndrfpsui_27
+      rect:
+        serializedVersion: 2
+        x: 1378
+        y: 530
+        width: 502
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cac94ee9248ab67b0800000000000000
+      internalID: -5229901538173608788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ndrfpsui_28
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 349
+        width: 468
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77f14439066702840800000000000000
+      internalID: 5197284127145205623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ndrfpsui_29
+      rect:
+        serializedVersion: 2
+        x: 1355
+        y: 381
+        width: 487
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c72bffde3c9738830800000000000000
+      internalID: 4072232370491601532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ndrfpsui_30
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 15
+        width: 221
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e631b6d1ef3fd390800000000000000
+      internalID: -7791438591125539095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ndrfpsui_31
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 14
+        width: 264
+        height: 330
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1ad99daef8d25340800000000000000
+      internalID: 4851178336977279516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ndrfpsui_32
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 15
+        width: 184
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bb41315b9bd08db0800000000000000
+      internalID: -4791588543393608779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ndrfpsui_33
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 184
+        width: 488
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8779b11c743c9a80800000000000000
+      internalID: -8458828292630677621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ndrfpsui_34
+      rect:
+        serializedVersion: 2
+        x: 1291
+        y: 32
+        width: 668
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7871d504bab17a8d0800000000000000
+      internalID: -2835267018073237625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
